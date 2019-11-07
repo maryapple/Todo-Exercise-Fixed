@@ -27,6 +27,7 @@ const connect = (mapStateToProps, mapDispatchToProps) =>
                     <Component
                         {...mapStateToProps(store.getState(), this.props)}
                         {...mapDispatchToProps(store.dispatch, this.props)}
+                        {...this.props}
                     />
                 )
             }
