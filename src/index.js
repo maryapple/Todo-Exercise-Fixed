@@ -101,13 +101,13 @@ class ToDoComponent extends React.Component {
 
     updateText = (e) => {
         const { value } = e.target
-        // this.state.todoText = value
+        // ошибка: this.state.todoText = value
         this.setState({todoText: value})
     }
 
     addTodo = () => {
         this.props.addTodo(this.state.todoText)
-        // this.state.todoText = ''
+        // ошибка: this.state.todoText = ''
         this.setState({ todoText: '' })
     }
 }
